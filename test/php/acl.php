@@ -1,0 +1,11 @@
+<?php
+$ak='firstuser';
+$sk='a3L04oxgjKkNo0';
+$time=time();
+$file="a.txt";
+$uak="testuser";
+$usk="password123";
+$sign=md5($file.'-'.$time.'-'.$sk);
+$reurl="http://drophetest.sinaapp.com";
+header("location:".'http://possibility.sinaapp.com/url/setacl?ak='.$ak.'&o='.$file.'&t='.$time.'&uak='.$uak.'&usk='.$usk.'&sign='.$sign.'&reurl='.$reurl);
+?>

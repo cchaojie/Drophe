@@ -12,6 +12,10 @@ Lib/CMSBaidu.php
     - description: cron baidu
     url: updateall.php
     schedule: every 10 mins
-	  timezone: Beijing
+	timezone: Beijing
 
 每10分钟执行updateall.php来更新用户使用了多少资源。
+
+
+百度分配的ak,sk都已经替换为'xxx'
+百度开放云文档地址：http://dev.baidu.com/wiki/yun

@@ -1,0 +1,11 @@
+<?php
+$ak='firstuser';
+$sk='a3L04oxgjKkNo0';
+$time=time();
+$file="a.txt";
+$uak="testuser";
+$usk="password123";
+$sign=md5($file.'-'.$time.'-'.$sk.'-'.$usk);
+$url=file_get_contents('http://possibility.sinaapp.com/url/get?type=private&ak='.$ak.'&o='.$file.'&t='.$time.'&uak='.$uak.'&sign='.$sign);
+header("location:".$url);
+?>
